@@ -17,8 +17,22 @@
         <!-- Page title actions -->
         <div class="col-auto ms-auto d-print-none">
         <div class="btn-list">
-            <a href="{{ route('Administrator.add.product') }}" class="btn btn-pill btn-outline-azure">
+      
+        <a href="{{ route('Administrator.price.products.report.excel') }}" class="btn btn-pill btn-outline-teal btn-sm">
+         <i class="fa fa-file-excel"> Report Excel</i>
+        </a>
+
+        <a href="{{ route('Administrator.price.products.report.pdf') }}" class="btn btn-pill btn-outline-red btn-sm">
+            <i class="fa fa-file-pdf"> Report PDF</i>
+           </a>
+
+           <a href="{{ route('Administrator.price.products.report.csv') }}" class="btn btn-pill btn-outline-secondary btn-sm">
+            <i class="fa fa-file-csv"> Report CSV</i>
+           </a>
+            
+            <a href="{{ route('Administrator.add.product.price') }}" class="btn btn-pill btn-outline-azure">
              <i class="fa fa-plus"> Create </i>
+               
             </a>
         </div>
         </div>
@@ -38,13 +52,16 @@
             <h3 class="card-title">Master {{ $title }}</h3>
         </div>
         <div class="table-responsive mb-4 p-3">
-            <table class="table card-table table-vcenter text-nowrap" id="ProductTable">
+            <table class="table card-table table-vcenter text-nowrap" id="ProductPriceTable">
                 <thead>
                     <tr>
                         <th style="width: 5%">No.</th>
                         <th>Name Product</th>
-                        <th>Name Category</th>
-                        <th>Description Product</th>
+                        <th>Category Product</th>
+                        <th>Price</th>
+                        <th>Price start date </th>
+                        <th>Price start end </th>
+                        <th>Product Description </th>
                         <th style="width: 3%">Actions</th>
                     </tr>
                 </thead>
@@ -56,7 +73,7 @@
     </div>
 </div>
 </div>
-<meta name="route-product-get" content="{{ route('Administrator.products.get') }}">
-@vite('resources/js/resource/js/product.js')
+<meta name="route-product-price-get" content="{{ route('Administrator.price.get') }}">
+@vite('resources/js/resource/js/productPrice.js')
 @endsection
 		

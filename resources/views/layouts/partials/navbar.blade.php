@@ -99,7 +99,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="{{ route('Administrator.price.products') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                             <i class="nav-icon fa fa-columns"></i>
                         </span>

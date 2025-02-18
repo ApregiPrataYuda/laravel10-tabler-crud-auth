@@ -17,12 +17,6 @@
         <!-- Page title actions -->
         <div class="col-auto ms-auto d-print-none">
         <div class="btn-list">
-      
-        <a href="#" class="btn btn-pill btn-outline-teal">
-         <i class="fa fa-file-excel"> Report </i>
-           
-        </a>
-            
             <a href="{{ route('Administrator.add.category') }}" class="btn btn-pill btn-outline-azure">
              <i class="fa fa-plus"> Create </i>
                

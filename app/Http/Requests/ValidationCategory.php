@@ -24,7 +24,6 @@ class ValidationCategory extends FormRequest
         return [
             // Mengizinkan huruf dan spasi untuk name_category
             'name_category' => 'required|regex:/^[A-Za-z\s]+$/|max:255',
-    
             // Mengizinkan huruf, angka, spasi, dan simbol tertentu untuk description_category
             'description_category' => 'required|regex:/^[A-Za-z0-9\s\-_\/.+]+$/',
         ];
